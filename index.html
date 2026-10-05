@@ -6,7 +6,9 @@
 <script src="tfm_defense_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="tfm_defense_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="tfm_defense_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="tfm_defense_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="tfm_defense_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="tfm_defense_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="tfm_defense_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.18">
 
   <title>Master’s Thesis Defense — Sergio Jácobo Zavaleta</title>
@@ -34,7 +36,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="tfm_defense_files/libs/revealjs/dist/theme/quarto-a009053f713f223eb45109d22c7414f1.css">
+  <link rel="stylesheet" href="tfm_defense_files/libs/revealjs/dist/theme/quarto-3d170a174b51185958aeaf2571932724.css">
   <link href="tfm_defense_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="tfm_defense_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="tfm_defense_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -163,77 +165,288 @@ RoboticsLab · Universidad Carlos III de Madrid</p>
 </div>
 </div>
 </section>
+<section id="presentation-outline" class="slide level2 rl-bg-light rl-title-wide">
+<h2>Presentation outline</h2>
+<div class="rl-outline-grid rl-outline-7">
+<div class="rl-outline-item rl-outline-motivation">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>01</p>
+</div>
+<div class="rl-outline-title">
+<p>Motivation</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Clinical context, existing solutions, and research gap.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-objectives">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>02</p>
+</div>
+<div class="rl-outline-title">
+<p>Objectives</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Engineering objectives and scope of the thesis.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-system">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>03</p>
+</div>
+<div class="rl-outline-title">
+<p>System design</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Wearable mechanics and antagonistic SMA transmission.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-control">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>04</p>
+</div>
+<div class="rl-outline-title">
+<p>Control</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Tracking, state allocation, supervision, and gating.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-method">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>05</p>
+</div>
+<div class="rl-outline-title">
+<p>Experimental validation</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Laboratory setup, protocols, signals, and metrics.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-results">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>06</p>
+</div>
+<div class="rl-outline-title">
+<p>Results</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Tracking, command behavior, repeatability, and duration.</p>
+</div>
+</div>
+<div class="rl-outline-item rl-outline-conclusion">
+<div class="rl-outline-head">
+<div class="rl-outline-number">
+<p>07</p>
+</div>
+<div class="rl-outline-title">
+<p>Conclusions</p>
+</div>
+</div>
+<div class="rl-outline-body">
+<p>Evidence, limitations, and next engineering steps.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="why-does-early-ankle-rehabilitation-require-a-different-robotic-design" class="slide level2 rl-bg-light">
 <h2>Why does early ankle rehabilitation require a different robotic design?</h2>
 <div class="rl-layout-figure-text rl-ratio-55-45">
 <div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
-<!-- OPTIONAL NEW FIGURE.
-     assets/figures/introduction/early_rehab_context.svg
-
-     Recommended composition (simple, conceptual, no literature collage):
-       LEFT   seated/supine, non-weight-bearing patient/mannequin silhouette
-       CENTER ankle sagittal DF/PF arc
-       RIGHT  three constraints: slow motion / wearable interface / measurable feedback -->
 <p><img data-src="assets/figures/introduction/early_rehab_context.svg"></p>
 </div>
 <div class="rl-side rl-card-stack rl-compact">
 <div class="rl-card rl-problem">
 <div class="rl-card-title">
-<p>TARGET USE</p>
+<p>TARGET CONTEXT</p>
 </div>
-<p>Slow dorsiflexion–plantarflexion mobilization before or independently of gait training.</p>
+<p>Early-stage ankle mobilization in <strong>seated or supine, non-weight-bearing conditions</strong>, potentially before the user is ready for gait training.</p>
 </div>
-<div class="rl-card rl-gap">
+<div class="rl-card rl-info-aqua">
 <div class="rl-card-title">
-<p>ENGINEERING GAP</p>
+<p>DESIGN PRIORITIES</p>
 </div>
-<p>Wearable fitting, flexible tensile transmission, SMA thermal constraints, sensing, and closed-loop control must operate as one system.</p>
+<p>Slow controlled dorsiflexion–plantarflexion, adjustable fitting and alignment, flexible force transmission, repeatable angular feedback, and safe embedded command generation.</p>
 </div>
-<div class="rl-card rl-objective">
+<div class="rl-card rl-evidence">
 <div class="rl-card-title">
-<p>THESIS QUESTION</p>
+<p>SCOPE BOUNDARY</p>
 </div>
-<p>Can an antagonistic SMA ankle exoskeleton generate controlled, repeatable motion and preserve comparable tracking during prolonged non-weight-bearing operation?</p>
+<p>The target is prescribed sagittal mobilization — <strong>not gait-phase assistance</strong> and not clinical-effectiveness validation.</p>
 </div>
 </div>
 </div>
 <div class="rl-takeaway">
-<p>The target is early, pre-ambulatory ankle mobilization — not gait assistance and not clinical effectiveness testing.</p>
+<p>Early rehabilitation therefore defines a different operating regime: the priority is controlled, wearable and repeatable non-weight-bearing mobilization rather than gait-phase assistance.</p>
 </div>
 </section>
-<section id="where-is-the-thesis-positioned-and-what-does-it-set-out-to-demonstrate" class="slide level2 rl-bg-light">
-<h2>Where is the thesis positioned, and what does it set out to demonstrate?</h2>
-<div class="rl-layout-figure-text rl-ratio-68-32">
-<div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
-<p><img data-src="assets/figures/introduction/scientific_positioning.svg"></p>
-</div>
-<div class="rl-side rl-card-stack rl-compact">
-<div class="rl-card rl-objective">
+<section id="what-solutions-exist-and-what-remains-underexplored" class="slide level2 rl-bg-light">
+<h2>What solutions exist — and what remains underexplored?</h2>
+<div class="rl-layout-three" style="--rl-gap: 16px;">
+<div class="rl-card" style="--rl-card-size: 0.58em; --rl-card-pad: 0.58em 0.62em;">
 <div class="rl-card-title">
-<p>DESIGN</p>
+<p>EARLY / IN-BED ROBOTS</p>
 </div>
-<p>Traceable requirements → adjustable wearable mechanics → antagonistic SMA transmission.</p>
+<div class="rl-literature-figure rl-literature-wide" style="--rl-literature-h: 300px;">
+<p><img data-src="assets/figures/literature/Zhang2021.svg"></p>
 </div>
+<p><strong>Demonstrated:</strong> ankle training can begin before gait in an in-bed wearable setting.</p>
+<p><strong>Relative limitation:</strong> representative architectures remain predominantly rigid and conventionally motor-driven.</p>
+</div>
+<div class="rl-card" style="--rl-card-size: 0.58em; --rl-card-pad: 0.58em 0.62em;">
+<div class="rl-card-title">
+<p>SOFT WEARABLE / GAIT</p>
+</div>
+<div class="rl-literature-figure rl-literature-wide" style="--rl-literature-h: 280px;">
+<p><img data-src="assets/figures/literature/Piao2023.svg"></p>
+</div>
+<p><strong>Demonstrated:</strong> compliant wearable structures and flexible SMA routing can reduce rigid distal hardware.</p>
+<p><strong>Relative limitation:</strong> the operating objective is walking assistance rather than slow early non-weight-bearing mobilization.</p>
+</div>
+<div class="rl-card" style="--rl-card-size: 0.58em; --rl-card-pad: 0.58em 0.62em;">
+<div class="rl-card-title">
+<p>SMA ANKLE ACTUATION</p>
+</div>
+<div class="rl-literature-figure rl-literature-wide" style="--rl-literature-h: 280px;">
+<p><img data-src="assets/figures/literature/Hau2021.svg"></p>
+</div>
+<p><strong>Demonstrated:</strong> antagonistic SMA actuation can generate dorsiflexion–plantarflexion rehabilitation motion.</p>
+<p><strong>Relative limitation:</strong> the system is stationary and relies on forced cooling and a simple discrete control.</p>
+</div>
+</div>
+<div class="rl-takeaway">
+<p><strong>Research gap:</strong> a comparatively underexplored integration is an <strong>adjustable wearable ankle system for early non-weight-bearing rehabilitation</strong> combining <strong>antagonistic SMA/Bowden actuation, relative-angle sensing, and hierarchical embedded closed-loop control</strong>.</p>
+</div>
+
+<aside><div>
+<p>Representative literature examples: <span class="citation" data-cites="Zhang2021 Piao2023 Hau2021">(Zhang et al. 2021; Piao et al. 2023; Hau et al. 2021)</span>.</p>
+</div></aside></section>
+<section id="what-are-the-objectives-of-this-thesis" class="slide level2 rl-bg-light rl-vcenter">
+<h2>What are the objectives of this thesis?</h2>
+<div class="rl-slide-body">
+<div class="rl-card rl-objective" style="--rl-card-size: 0.64em; --rl-card-pad: 0.58em 0.75em; margin-bottom: 0.55em;">
+<div class="rl-card-title">
+<p>GENERAL OBJECTIVE</p>
+</div>
+<p><strong>Design, implement, and preliminarily evaluate</strong> a wearable ankle exoskeleton based on antagonistic SMA actuation and closed-loop angular feedback for controlled, repeatable, slow dorsiflexion–plantarflexion mobilization under mannequin-based laboratory conditions.</p>
+</div>
+<div class="rl-method-flow" style="--rl-step-cols: 5; --rl-gap: 13px;">
+<div class="rl-step" style="padding: 0.54em 0.58em;">
+<div class="rl-step-head">
+<div class="rl-step-number">
+<p>01</p>
+</div>
+<div class="rl-step-title">
+<p>Requirements</p>
+</div>
+</div>
+<div class="rl-step-body">
+<p>Translate biomechanical, anthropometric, alignment, and early-rehabilitation needs into traceable requirements.</p>
+</div>
+</div>
+<div class="rl-step" style="padding: 0.54em 0.58em;">
+<div class="rl-step-head">
+<div class="rl-step-number">
+<p>02</p>
+</div>
+<div class="rl-step-title">
+<p>Mechanics</p>
+</div>
+</div>
+<div class="rl-step-body">
+<p>Design and manufacture adjustable tibial/foot interfaces and the angle-tracking mechanism.</p>
+</div>
+</div>
+<div class="rl-step" style="padding: 0.54em 0.58em;">
+<div class="rl-step-head">
+<div class="rl-step-number">
+<p>03</p>
+</div>
+<div class="rl-step-title">
+<p>Actuation</p>
+</div>
+</div>
+<div class="rl-step-body">
+<p>Implement antagonistic SMA + Bowden/PTFE transmission and integrate sensing, electronics, and target hardware.</p>
+</div>
+</div>
+<div class="rl-step" style="padding: 0.54em 0.58em;">
+<div class="rl-step-head">
+<div class="rl-step-number">
+<p>04</p>
+</div>
+<div class="rl-step-title">
+<p>Control</p>
+</div>
+</div>
+<div class="rl-step-body">
+<p>Develop hierarchical tracking, directional allocation, safety supervision, and final actuator gating.</p>
+</div>
+</div>
+<div class="rl-step" style="padding: 0.54em 0.58em;">
+<div class="rl-step-head">
+<div class="rl-step-number">
+<p>05</p>
+</div>
+<div class="rl-step-title">
+<p>Evaluation</p>
+</div>
+</div>
+<div class="rl-step-body">
+<p>Characterize tracking, transmission-condition effects, repeatability, and prolonged operation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="which-biomechanical-constraints-drive-the-mechanical-design" class="slide level2 rl-bg-light">
+<h2>Which biomechanical constraints drive the mechanical design?</h2>
+<div class="rl-layout-figure-text rl-ratio-58-42">
+<div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w:60%;">
+<p><img data-src="assets/figures/introduction/sagittal_angle_convention.svg"></p>
+</div>
+<div class="rl-side rl-card-stack rl-dense">
 <div class="rl-card rl-info-aqua">
 <div class="rl-card-title">
-<p>CONTROL</p>
+<p>ACTIVE SCOPE</p>
 </div>
-<p>Relative-angle feedback → BPID tracking → State Manager → safety supervision → actuator gating.</p>
+<p>One actively controlled sagittal coordinate: <strong>dorsiflexion–plantarflexion</strong>. Secondary motion is accommodated rather than actively driven.</p>
 </div>
-<div class="rl-card rl-evidence">
+<div class="rl-card rl-info-gold">
 <div class="rl-card-title">
-<p>EVALUATION</p>
+<p>NON-IDEAL ANKLE AXIS</p>
 </div>
-<p>Mannequin-based evidence for tracking, transmission-condition sensitivity, repeatability, and prolonged operation.</p>
+<p>The biological ankle is not a perfect fixed-axis hinge → geometric positioning and limited passive accommodation reduce overconstraint.</p>
+</div>
+<div class="rl-card rl-info-green">
+<div class="rl-card-title">
+<p>ENGINEERING ANGLE</p>
+</div>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>≈</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\theta_{\mathrm{neutral}}\approx90^\circ</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>,</mo><msup><mn>120</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\theta\in[60^\circ,120^\circ]</annotation></semantics></math> define the <strong>relative tibial–foot angle</strong> used for design and control.</p>
 </div>
 </div>
+</div>
+<div class="rl-takeaway">
+<p>Biomechanics provides design constraints and reference ranges; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math> is a device-relative control variable, not a reconstruction of the instantaneous physiological ankle axis.</p>
 </div>
 </section>
 <section id="system" class="slide level2 rl-divider rl-bg-section-petrol" data-footer="false">
 <h2>SYSTEM</h2>
 <div class="rl-divider-shell rl-divider-left rl-divider-gold">
 <div class="rl-divider-kicker">
-<p>01 · FROM REQUIREMENTS TO HARDWARE</p>
+<p>03 · SYSTEM DESIGN</p>
 </div>
 <div class="rl-divider-title">
 <p>SYSTEM</p>
@@ -247,18 +460,9 @@ RoboticsLab · Universidad Carlos III de Madrid</p>
 <h2>What was actually built, and how is the complete system decomposed?</h2>
 <div class="rl-layout-figure-text rl-ratio-45-55">
 <div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
-<!-- NEW COMPOSITE RECOMMENDED:
-     assets/figures/system/integrated_system_evidence.svg
-
-     Build in Inkscape from your existing material:
-       ~65% isometric CAD of complete exoskeleton
-       ~35% manufactured/mounted prototype photograph
-     Use 4-6 short callouts only: TU, ATM, FU, SMA routes, sensing, mannequin interface.
-     No paragraphs and no duplicate system architecture here. -->
 <p><img data-src="assets/figures/system/integrated_system_evidence_i.svg"></p>
 </div>
 <div class="rl-side rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
-<!-- Your final compact subsystem TikZ/Inkscape figure. -->
 <p><img data-src="assets/figures/system/system_architecture.svg"></p>
 </div>
 </div>
@@ -266,19 +470,110 @@ RoboticsLab · Universidad Carlos III de Madrid</p>
 <p>The wearable assembly provides the body interfaces and relative-angle geometry; actuation, electronics, and embedded control complete the mechatronic system.</p>
 </div>
 </section>
+<section id="what-quantitative-design-parameters-define-the-prototype" class="slide level2 rl-bg-light">
+<h2>What quantitative design parameters define the prototype?</h2>
+<div class="rl-layout-two rl-cards-aligned" style="--rl-gap: 18px;">
+<div class="rl-card rl-info-aqua" style="--rl-card-size: 0.57em; --rl-card-pad: 0.55em 0.62em;">
+<div class="rl-card-title">
+<p>WEARABLE MECHANICS</p>
+</div>
+<div class="rl-figure-frame rl-figure-fit" style="--rl-figure-w: 80%; --rl-figure-pad: 5px; margin-bottom: 0.35em;">
+<p><img data-src="assets/figures/system/wearable_mechanics.svg"></p>
+</div>
+<div class="rl-table-wrap" style="--rl-table-w: 50%;">
+<div class="rl-table">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th style="text-align: right;">Design value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Foot structural length (Foot unit)</td>
+<td style="text-align: right;">230–270 mm</td>
+</tr>
+<tr class="even">
+<td>Longitudinal adjustment (Foot unit)</td>
+<td style="text-align: right;">40 mm</td>
+</tr>
+<tr class="odd">
+<td>Forefoot / heel width (Foot unit)</td>
+<td style="text-align: right;">100–108 / 75–80 mm</td>
+</tr>
+<tr class="even">
+<td>Base thickness (Foot unit)</td>
+<td style="text-align: right;">15–18 mm</td>
+</tr>
+<tr class="odd">
+<td>Longitudinal adjustment (Tibial unit)</td>
+<td style="text-align: right;">max 130 mm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="rl-card rl-info-rose" style="--rl-card-size: 0.57em; --rl-card-pad: 0.55em 0.62em;">
+<div class="rl-card-title">
+<p>SMA ACTUATION AND TRANSMISSION</p>
+</div>
+<div class="rl-figure-frame rl-figure-fit" style="--rl-figure-w: 68%; --rl-figure-pad: 5px; margin-bottom: 0.35em;">
+<p><img data-src="assets/figures/system/sma_transmission_routing.svg"></p>
+</div>
+<div class="rl-table-wrap" style="--rl-table-w: 50%;">
+<div class="rl-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th style="text-align: right;">Design value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Directional groups</td>
+<td style="text-align: right;">2 antagonistic</td>
+</tr>
+<tr class="even">
+<td>SMA wires / group</td>
+<td style="text-align: right;">3 × NiTi Ø0.5 mm</td>
+</tr>
+<tr class="odd">
+<td>Active length / wire</td>
+<td style="text-align: right;">3.0 m</td>
+</tr>
+<tr class="even">
+<td>Design contraction</td>
+<td style="text-align: right;">4%</td>
+</tr>
+<tr class="odd">
+<td>Nominal activation temp.</td>
+<td style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo><msup><mn>55</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\approx55^\circ</annotation></semantics></math>C</td>
+</tr>
+<tr class="even">
+<td>Electrical sizing / group</td>
+<td style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub><mo>≈</mo><mn>5.1</mn><mspace width="0.167em"></mspace><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">R_{eq}\approx5.1\,\Omega</annotation></semantics></math> · <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>≈</mo><mn>11.7</mn></mrow><annotation encoding="application/x-tex">I\approx11.7</annotation></semantics></math> A · 60 V</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="rl-takeaway">
+<p>Anthropometric data guided adjustability but do not establish a validated population fitting range; delivered force and ankle torque were not quantified in this campaign.</p>
+</div>
+</section>
 <section id="how-are-adjustment-and-antagonistic-tensile-transmission-implemented-mechanically" class="slide level2 rl-bg-light">
 <h2>How are adjustment and antagonistic tensile transmission implemented mechanically?</h2>
 <div class="rl-layout-figure-text rl-ratio-60-40">
 <div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w: 90%;">
-<!-- NEW COMPOSITE RECOMMENDED:
-     assets/figures/system/transmission_anchor_evidence.svg
-
-     Prefer ONE coherent Inkscape plate assembled from existing CAD/details:
-       central: overall flexor/extensor tensile paths
-       upper inset: proximal tibial connection / Bowden sheath termination
-       lower inset: distal forefoot + heel anchor points
-     Visually distinguish FLEX route (rose) and EXT route (teal).
-     Keep arrows attached to hardpoints; do not infer force/torque values. -->
 <p><img data-src="assets/figures/system/transmission_anchor_evidence_i.svg"></p>
 </div>
 <div class="rl-side rl-card-stack rl-compact">
@@ -307,7 +602,7 @@ RoboticsLab · Universidad Carlos III de Madrid</p>
 <h2>CONTROL</h2>
 <div class="rl-divider-shell rl-divider-center rl-divider-aqua">
 <div class="rl-divider-kicker">
-<p>02 · HIERARCHICAL CLOSED-LOOP CONTROL</p>
+<p>04 · HIERARCHICAL CLOSED-LOOP CONTROL</p>
 </div>
 <div class="rl-divider-title">
 <p>CONTROL</p>
@@ -358,7 +653,7 @@ RoboticsLab · Universidad Carlos III de Madrid</p>
 <p><img data-src="assets/figures/control/state_manager_transition_slides.svg"></p>
 </div>
 </div>
-<div class="rl-layout-three rl-cards-equal" style="--rl-card-size: 0.62em; --rl-card-pad: 0.46em 0.58em; --rl-gap: 16px;">
+<div class="rl-layout-three rl-cards-aligned" style="--rl-card-size: 0.62em; --rl-card-pad: 0.46em 0.58em; --rl-gap: 16px;">
 <div class="rl-semantic-card rl-info-flex">
 <div class="rl-card-title">
 <p>FLEX</p>
@@ -435,14 +730,14 @@ g_F[k]g_E[k]=0.
 <p>The contribution is not one equation in isolation; it is the coordinated path from state selection to safe, mutually exclusive physical commands.</p>
 </div>
 </section>
-<section id="methodology" class="slide level2 rl-divider rl-bg-section-petrol" data-footer="false">
-<h2>METHODOLOGY</h2>
+<section id="experimental-validation" class="slide level2 rl-divider rl-bg-section-petrol" data-footer="false">
+<h2>EXPERIMENTAL VALIDATION</h2>
 <div class="rl-divider-shell rl-divider-center rl-divider-gold">
 <div class="rl-divider-kicker">
-<p>03 · EXPERIMENTAL METHODOLOGY</p>
+<p>05 · EXPERIMENTAL VALIDATION</p>
 </div>
 <div class="rl-divider-title">
-<p>METHODOLOGY</p>
+<p>EXPERIMENTAL VALIDATION</p>
 </div>
 <div class="rl-divider-subtitle">
 <p>A real mannequin-based plant, embedded target, laboratory power stage, and four complementary experimental conditions</p>
@@ -453,29 +748,20 @@ g_F[k]g_E[k]=0.
 <h2>How was the integrated prototype evaluated in the laboratory?</h2>
 <div class="rl-layout-figure-text rl-ratio-40-60">
 <div class="rl-main rl-photo-frame" style="width: 100%; justify-self: center;">
-<!-- IMPORTANT REAL-EVIDENCE FIGURE:
-     assets/figures/methodology/test_setup_annotated.svg
-
-     Recommended: use the real laboratory photograph as the base and annotate in Inkscape.
-     Label only the components relevant to the signal/power chain:
-       mannequin + mounted exoskeleton
-       STM32F4 target
-       power/switching electronics
-       laboratory DC supply
-       host computer / USB-VCP
-     Optional small arrow overlay: sensor -> target -> PWM -> power board -> SMA -> ankle.
-     Do not reproduce every cable. -->
 <p><img data-src="assets/figures/methodology/test_setup_annotated_i.svg" class="rl-photo"></p>
 </div>
-<div class="rl-side rl-card-stack">
-<div class="rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
-<!-- Compact RCP architecture, already refined in Inkscape. -->
+<div class="rl-side rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
 <p><img data-src="assets/figures/methodology/rcp_architecture.svg"></p>
 </div>
 </div>
+<div class="rl-takeaway">
+<p>The reported experiments use the physical mannequin plant: the host schedules references and logs signals, while tracking, State Manager logic, safety supervision, and PWM generation execute on the embedded target.</p>
 </div>
-<div class="rl-method-flow">
-<div class="rl-step">
+</section>
+<section id="what-exactly-was-tested-and-how-was-performance-quantified" class="slide level2 rl-bg-light">
+<h2>What exactly was tested and how was performance quantified?</h2>
+<div class="rl-method-flow" style="--rl-step-cols: 4; --rl-gap: 14px;">
+<div class="rl-step" style="padding: 0.55em 0.62em;">
 <div class="rl-step-head">
 <div class="rl-step-number">
 <p>A</p>
@@ -485,10 +771,11 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 <div class="rl-step-body">
-<p>Reduced transmission slack</p>
+<p>Reduced perceptible transmission slack<br>
+<strong>37–375 s</strong></p>
 </div>
 </div>
-<div class="rl-step">
+<div class="rl-step" style="padding: 0.55em 0.62em;">
 <div class="rl-step-head">
 <div class="rl-step-number">
 <p>B</p>
@@ -498,10 +785,11 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 <div class="rl-step-body">
-<p>Initial-condition sensitivity</p>
+<p>Sensitivity to initial transmission condition<br>
+<strong>218–390 s</strong></p>
 </div>
 </div>
-<div class="rl-step">
+<div class="rl-step" style="padding: 0.55em 0.62em;">
 <div class="rl-step-head">
 <div class="rl-step-number">
 <p>C</p>
@@ -511,10 +799,11 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 <div class="rl-step-body">
-<p>Cycle-to-cycle repeatability</p>
+<p>Cycle-to-cycle repeatability<br>
+<strong>360–660 s</strong></p>
 </div>
 </div>
-<div class="rl-step">
+<div class="rl-step" style="padding: 0.55em 0.62em;">
 <div class="rl-step-head">
 <div class="rl-step-number">
 <p>D</p>
@@ -524,16 +813,79 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 <div class="rl-step-body">
-<p>Prolonged tracking behavior</p>
+<p>Prolonged repeated operation<br>
+<strong>220–2500 s</strong></p>
 </div>
 </div>
+</div>
+<div class="rl-layout-two" style="--rl-gap: 18px; margin-top: 0.52em;">
+<div class="rl-table-wrap" style="--rl-table-w: 100%;">
+<div class="rl-table rl-table-compact">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Exp.</th>
+<th style="text-align: right;">Ref. center (°)</th>
+<th style="text-align: right;">Excursion</th>
+<th style="text-align: right;">Period</th>
+<th style="text-align: left;">Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">≈10° P2P</td>
+<td style="text-align: right;">≈30 s</td>
+<td style="text-align: left;">Pretensioned</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">≈10° P2P</td>
+<td style="text-align: right;">≈30 s</td>
+<td style="text-align: left;">Relaxed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">≈10° P2P</td>
+<td style="text-align: right;">≈30 s</td>
+<td style="text-align: left;">Repeated cycles</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: right;">≈70*</td>
+<td style="text-align: right;">≈10° P2P*</td>
+<td style="text-align: right;">≈30 s</td>
+<td style="text-align: left;">Active / recovery</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="rl-table-note" style="--rl-table-note-size: 0.5em;">
+<p>*D includes manually scheduled recovery intervals; values describe the active periodic reference rather than the total-window range.</p>
+</div>
+</div>
+<div class="rl-card rl-evidence" style="--rl-card-size: 0.58em; --rl-card-pad: 0.50em 0.62em;">
+<div class="rl-card-title">
+<p>RECORDED AND EVALUATED</p>
+</div>
+<p><strong>Signals:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>F</mi></msub><annotation encoding="application/x-tex">u_F</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>E</mi></msub><annotation encoding="application/x-tex">u_E</annotation></semantics></math>; control activation when retained.<br>
+<strong>Derived:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mi>r</mi><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">e=r-y</annotation></semantics></math> and PWM-based functional FLEX/IDLE/EXT.<br>
+<strong>Metrics:</strong> RMSE · MAE · Bias · <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">max</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">\max|e|</annotation></semantics></math> · measured P2P.<br>
+<strong>Protocol-specific:</strong> phase-normalized cycles (C) and active-batch metrics / descriptive trends (D).</p>
+</div>
+</div>
+<div class="rl-takeaway">
+<p>The four experiments answer complementary engineering questions; they are not four repetitions of one generic performance test.</p>
 </div>
 </section>
 <section id="results" class="slide level2 rl-divider rl-bg-section-navy" data-footer="false">
 <h2>RESULTS</h2>
 <div class="rl-divider-shell rl-divider-left rl-divider-gold">
 <div class="rl-divider-kicker">
-<p>04 · EXPERIMENTAL EVIDENCE</p>
+<p>06 · EXPERIMENTAL EVIDENCE</p>
 </div>
 <div class="rl-divider-title">
 <p>RESULTS</p>
@@ -677,22 +1029,59 @@ g_F[k]g_E[k]=0.
 <p>Tracking error did not progressively increase across the selected protocol; SMA temperature was not measured, so this is not evidence of validated thermal safety.</p>
 </div>
 </section>
-<section id="representative-non-weight-bearing-ankle-motion" class="slide level2 rl-bg-light">
-<h2>Representative non-weight-bearing ankle motion</h2>
-<div class="rl-video-frame" style="--rl-video-w: 78%;">
-<video controls="" muted="" playsinline="" preload="metadata" poster="assets/video/representative_motion_poster.jpg">
-<!-- <source src="assets/video/representative_df_pf.mp4" type="video/mp4"> -->
-</video>
+<section id="what-did-the-experimental-campaign-demonstrate" class="slide level2 rl-bg-light rl-vcenter">
+<h2>What did the experimental campaign demonstrate?</h2>
+<div class="rl-slide-body">
+<div class="rl-table-wrap" style="--rl-table-w: 96%;">
+<div class="rl-table rl-table-compact">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evaluation question</th>
+<th>Main quantitative evidence</th>
+<th>What the evidence supports</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Transmission condition</strong></td>
+<td>A: RMSE <strong>0.388°</strong> · B: <strong>0.346°</strong>; other metrics changed in different directions</td>
+<td>Closed-loop response is sensitive to the initial transmission condition; no universal optimum pretension was established.</td>
+</tr>
+<tr class="even">
+<td><strong>Final directional commands</strong></td>
+<td>No simultaneous non-zero FLEX / EXT final command in the retained records</td>
+<td>Output-level mutual exclusion was preserved in the analyzed command sequences.</td>
+</tr>
+<tr class="odd">
+<td><strong>Cycle repeatability</strong></td>
+<td><strong>9 cycles</strong> · mean RMSE <strong>0.169°</strong> · SD <strong>0.009°</strong> · P2P <strong>9.954 ± 0.130°</strong></td>
+<td>Closely repeatable cycle-to-cycle angular response under the selected condition.</td>
+</tr>
+<tr class="even">
+<td><strong>Prolonged operation</strong></td>
+<td><strong>≈38 min</strong> · <strong>6 batches</strong> · active RMSE <strong>0.220°</strong> · RMSE trend <strong>−0.117°/h</strong></td>
+<td>No progressive growth of tracking-error magnitude under the tested active/recovery schedule.</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="rl-takeaway">
-<p>Representative closed-loop dorsiflexion–plantarflexion on the mannequin testbed; this is not a gait trial.</p>
+</div>
+<div class="rl-takeaway rl-takeaway-green">
+<p>The campaign supports mannequin-based <strong>mechatronic feasibility, tracking accuracy, repeatability, and prolonged command-level operation</strong>; assistance torque, direct thermal safety, and clinical efficacy remain outside the present evidence.</p>
+</div>
 </div>
 </section>
 <section id="conclusions" class="slide level2 rl-divider rl-bg-section-petrol" data-footer="false">
 <h2>CONCLUSIONS</h2>
 <div class="rl-divider-shell rl-divider-center rl-divider-aqua">
 <div class="rl-divider-kicker">
-<p>05 · ENGINEERING INTERPRETATION</p>
+<p>07 · ENGINEERING INTERPRETATION</p>
 </div>
 <div class="rl-divider-title">
 <p>CONCLUSIONS</p>
@@ -702,9 +1091,10 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="what-has-been-demonstrated-and-what-remains-outside-the-evidence" class="slide level2 rl-bg-light">
+<section id="what-has-been-demonstrated-and-what-remains-outside-the-evidence" class="slide level2 rl-bg-light rl-vcenter">
 <h2>What has been demonstrated — and what remains outside the evidence?</h2>
-<div class="rl-layout-three">
+<div class="rl-slide-body">
+<div class="rl-layout-three rl-cards-aligned">
 <div class="rl-card rl-contribution">
 <div class="rl-card-title">
 <p>DEMONSTRATED BY EXPERIMENT</p>
@@ -727,10 +1117,12 @@ g_F[k]g_E[k]=0.
 <div class="rl-takeaway rl-takeaway-green">
 <p>The thesis demonstrates the mechatronic feasibility of accurate, repeatable antagonistic-SMA ankle mobilization under the tested mannequin-based conditions — not clinical efficacy, quantified assistance torque, or validated thermal safety.</p>
 </div>
+</div>
 </section>
-<section id="what-are-the-next-engineering-steps" class="slide level2 rl-bg-light">
+<section id="what-are-the-next-engineering-steps" class="slide level2 rl-bg-light rl-vcenter">
 <h2>What are the next engineering steps?</h2>
-<div class="rl-layout-three">
+<div class="rl-slide-body">
+<div class="rl-layout-three rl-cards-aligned">
 <div class="rl-card rl-info-aqua">
 <div class="rl-card-title">
 <p>INSTRUMENT SAFETY</p>
@@ -752,6 +1144,7 @@ g_F[k]g_E[k]=0.
 </div>
 <div class="rl-takeaway">
 <p>The next stage is direct instrumentation and quantitative safety/mechanical validation before extending evaluation beyond the mannequin platform.</p>
+</div>
 </div>
 </section>
 <section id="closing" class="slide level2 rl-cover rl-cover-dark rl-cover-pattern-lines rl-cover-title-serif rl-cover-closing" data-footer="false">
@@ -779,7 +1172,8 @@ g_F[k]g_E[k]=0.
 <p>Sergio Jácobo Zavaleta</p>
 </div>
 <div class="rl-supervision">
-<p>Supervisor: Dorin Sabin Copaci RoboticsLab · Universidad Carlos III de Madrid</p>
+<p>Supervisor: Dorin Sabin Copaci<br>
+RoboticsLab · Universidad Carlos III de Madrid</p>
 </div>
 </div>
 <div class="rl-cover-bottom">
@@ -787,7 +1181,7 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup" class="slide level2 rl-divider rl-bg-backup-decorative" data-footer="false">
+<section id="backup" class="slide level2 rl-divider rl-bg-backup-decorative" data-footer="false" data-visibility="uncounted">
 <h2>BACKUP</h2>
 <div class="rl-divider-shell rl-divider-center rl-divider-petrol">
 <div class="rl-divider-kicker">
@@ -801,19 +1195,53 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup-full-engineering-requirement-matrix" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-representative-non-weight-bearing-dorsiflexionplantarflexion-motion" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
+<h2>BACKUP · Representative non-weight-bearing dorsiflexion–plantarflexion motion</h2>
+<div class="rl-video-frame" style="--rl-video-w: 78%;">
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/video/exo-test1.mp4"></video>
+</div>
+</section>
+<section id="backup-scientific-positioning-and-contribution-scope" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
+<h2>Backup · Scientific positioning and contribution scope</h2>
+<div class="rl-layout-figure-text rl-ratio-68-32">
+<div class="rl-main rl-figure-frame rl-figure-fit" style="--rl-figure-w: 100%;">
+<p><img data-src="assets/figures/introduction/scientific_positioning.svg"></p>
+</div>
+<div class="rl-side rl-card-stack rl-compact">
+<div class="rl-card rl-objective">
+<div class="rl-card-title">
+<p>DESIGN</p>
+</div>
+<p>Traceable requirements → adjustable wearable mechanics → antagonistic SMA transmission.</p>
+</div>
+<div class="rl-card rl-info-aqua">
+<div class="rl-card-title">
+<p>CONTROL</p>
+</div>
+<p>Relative-angle feedback → BPID tracking → State Manager → safety supervision → actuator gating.</p>
+</div>
+<div class="rl-card rl-evidence">
+<div class="rl-card-title">
+<p>EVALUATION</p>
+</div>
+<p>Mannequin-based evidence for tracking, transmission-condition sensitivity, repeatability, and prolonged operation.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="backup-full-engineering-requirement-matrix" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Full engineering requirement matrix</h2>
 <div class="rl-figure-full">
 <p><img data-src="assets/tables/table_design_requirements_slides.svg" class="rl-vector-table"></p>
 </div>
 </section>
-<section id="backup-requirement-verification-and-remaining-validation" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-requirement-verification-and-remaining-validation" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Requirement verification and remaining validation</h2>
 <div class="rl-figure-full">
 <p><img data-src="assets/tables/table_requirement_verification_slides.svg" class="rl-vector-table"></p>
 </div>
 </section>
-<section id="backup-positioning-against-representative-antagonistic-sma-systems" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-positioning-against-representative-antagonistic-sma-systems" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Positioning against representative antagonistic SMA systems</h2>
 <!-- Contextual comparison only. Present thesis row is deliberately highlighted.
      Keep in backup by default. Promote to the main discussion only if timing allows. -->
@@ -821,13 +1249,13 @@ g_F[k]g_E[k]=0.
 <p><img data-src="assets/tables/table_sma_positioning_slides.svg" class="rl-vector-table"></p>
 </div>
 </section>
-<section id="backup-device-taxonomy" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-device-taxonomy" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Device taxonomy</h2>
 <div class="rl-figure-full">
 <p><img data-src="assets/figures/backup/device_taxonomy.svg"></p>
 </div>
 </section>
-<section id="backup-mechanical-architecture-details" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-mechanical-architecture-details" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Mechanical architecture details</h2>
 <div class="rl-layout-three">
 <div class="rl-figure-frame rl-figure-fit" style="--rl-figure-w: 90%;">
@@ -841,7 +1269,7 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup-active-batch-and-scheduled-recovery-protocol" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-active-batch-and-scheduled-recovery-protocol" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Active-batch and scheduled-recovery protocol</h2>
 <!-- Use the thesis schematic shown in Fig. 6.4, cropped/redrawn without the thesis caption.
      Important language: manually scheduled at host/reference level; not an autonomous thermal estimator. -->
@@ -857,7 +1285,7 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup-complete-experiment-a-b-traces" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-complete-experiment-a-b-traces" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Complete Experiment A / B traces</h2>
 <div class="rl-layout-two">
 <div class="rl-result-card">
@@ -868,7 +1296,7 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup-complete-experiment-c-d-traces" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-complete-experiment-c-d-traces" class="slide level2 rl-backup rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Complete Experiment C / D traces</h2>
 <div class="rl-layout-two">
 <div class="rl-result-card">
@@ -879,7 +1307,7 @@ g_F[k]g_E[k]=0.
 </div>
 </div>
 </section>
-<section id="backup-from-bpid-tracking-law-to-final-gated-commands" class="slide level2 rl-backup rl-backup-dense rl-bg-pearl rl-equations-large">
+<section id="backup-from-bpid-tracking-law-to-final-gated-commands" class="slide level2 rl-backup rl-backup-dense rl-bg-pearl rl-equations-large" data-visibility="uncounted">
 <h2>Backup · From BPID tracking law to final gated commands</h2>
 <div class="rl-layout-two" style="--rl-gap: 18px;">
 <div class="rl-card" style="--rl-card-size: 0.60em; --rl-card-pad: 0.58em 0.68em;">
@@ -959,8 +1387,9 @@ g_F[k]\,g_E[k] &amp;= 0.
 </div>
 </div>
 </section>
-<section id="backup-electrical-sizing-and-actuator-group-parameters" class="slide level2 rl-backup rl-bg-pearl">
+<section id="backup-electrical-sizing-and-actuator-group-parameters" class="slide level2 rl-backup rl-vcenter rl-bg-pearl" data-visibility="uncounted">
 <h2>Backup · Electrical sizing and actuator-group parameters</h2>
+<div class="rl-slide-body">
 <div class="rl-table-wrap" style="--rl-table-w: 50%;">
 <div class="rl-table rl-table-spec">
 <table class="caption-top">
@@ -1007,14 +1436,7 @@ g_F[k]\,g_E[k] &amp;= 0.
 </table>
 </div>
 </div>
-<!-- .rl-card-stack
-        ↓
-.rl-card-stack.rl-compact
-        ↓
-.rl-card-stack.rl-dense
-        ↓
-.rl-card-stack.rl-tight -->
-<!-- ## Why does early ankle rehabilitation require a different robotic design? {.rl-bg-light .rl-title-wide} -->
+</div>
 
 </section>
     </div>
@@ -1073,7 +1495,7 @@ g_F[k]\,g_E[k] &amp;= 0.
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: 'c',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1382,6 +1804,7 @@ g_F[k]\,g_E[k] &amp;= 0.
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
