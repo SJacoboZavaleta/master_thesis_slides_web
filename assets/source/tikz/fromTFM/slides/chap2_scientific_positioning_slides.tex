@@ -1,0 +1,35 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[slide title] at (10.8,9.95) {SCIENTIFIC POSITIONING OF THE THESIS};
+\node[slide subtitle, text width=16.8cm] at (10.8,9.25)
+{The contribution sits at the intersection of early rehabilitation, modular wearable mechanics, and thermally-aware SMA supervision.};
+
+% Left hierarchy
+\node[box, fill=archaquabg, minimum width=4.6cm, minimum height=0.95cm] (top) at (3.9,7.55)
+{Ankle rehabilitation robotics};
+\node[box, fill=archlilacbg, minimum width=4.6cm, minimum height=0.95cm] (mid1) at (3.9,6.05)
+{Body-mounted exoskeletons};
+\node[box, fill=archrosebg, minimum width=4.6cm, minimum height=0.95cm] (mid2) at (3.9,4.55)
+{SMA-driven ankle systems};
+\node[amberbox, minimum width=5.1cm, minimum height=1.15cm] (th) at (3.9,2.75)
+{\textbf{Present thesis}\\Modular biomimetic ankle exoskeleton};
+\draw[flow] (top.south) -- (mid1.north);
+\draw[flow] (mid1.south) -- (mid2.north);
+\draw[flow] (mid2.south) -- (th.north);
+
+% Attribute group
+\node[box, fill=archlight, minimum width=11.8cm, minimum height=4.7cm] (scopeframe) at (14.0,5.15) {};
+\node[glabel, anchor=west] at ([xshift=2mm]scopeframe.north west) {Contribution scopes};
+
+\node[softbox, text width=10.4cm, align=left, anchor=north] (clinical) at ([yshift=-7mm]scopeframe.north)
+{\textbf{Clinical scope}\\Early-stage rehabilitation in seated or bed-based conditions; severe impairment; not intended as a gait-assistance device.};
+\node[softbox, text width=10.4cm, align=left, anchor=north] (eng) at ([yshift=-2mm]clinical.south)
+{\textbf{Engineering scope}\\Adjustable tibial and foot interfaces, antagonistic SMA transmission, embedded sensing and control, and rapid-control-prototyping validation.};
+\node[softbox, text width=10.4cm, align=left, anchor=north] (ctrl) at ([yshift=-2mm]eng.south)
+{\textbf{Control scope}\\Indirect thermal-aware supervision, directional state management, bilinear PID tracking, and explicit safety gating.};
+
+\draw[flow] (th.east) -- ++(1.05,0) |- ([xshift=-2mm]scopeframe.west);
+\node[tinylabel] at (7.25,3.25) {main contribution attributes};
+
+\node[amberbox, text width=10.4cm, align=left, anchor=north west] (claim) at (8.1,1.55)
+{\textbf{Validation claim}\\Design, control, and preliminary HIL evidence for sustained and repeatable ankle-angle tracking under antagonistic SMA actuation.};
+\end{tikzpicture}

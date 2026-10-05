@@ -1,0 +1,109 @@
+
+\documentclass[border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx,booktabs,array,colortbl}
+\usepackage{tikz}
+\usepackage{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{archdark}{HTML}{263142}
+\definecolor{archslate}{HTML}{64748B}
+\definecolor{archlight}{HTML}{F8FAFC}
+\definecolor{archmuted}{HTML}{EEF2F7}
+
+% Exact subsystem palette from the approved TFM
+\definecolor{subsysTUFill}{HTML}{DCEAF7}
+\definecolor{subsysFUFill}{HTML}{DDEED8}
+\definecolor{subsysATMFill}{HTML}{F7E6B8}
+\definecolor{subsysACTFill}{HTML}{F3D8DE}
+\definecolor{subsysELECFill}{HTML}{E4DDF2}
+\definecolor{subsysCTRLFill}{HTML}{D6ECEF}
+\definecolor{subsysEXPFill}{HTML}{E5E7EB}
+
+% Verification palette
+\definecolor{statusDemo}{HTML}{DDEED8}
+\definecolor{statusDesign}{HTML}{DCEAF7}
+\definecolor{statusPartial}{HTML}{F7E6B8}
+\definecolor{statusInk}{HTML}{263142}
+
+
+\newcommand{\status}[2]{%
+\tikz[baseline=(X.base)]\node[
+    draw=archdark!35,
+    fill=#1,
+    rounded corners=2pt,
+    inner xsep=4pt,
+    inner ysep=1.5pt,
+    font=\scriptsize\bfseries
+](X){#2};}
+
+\begin{document}
+\begin{minipage}{23.6cm}
+\centering
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.18}
+\small
+
+\begin{tabularx}{\linewidth}{
+>{\bfseries\raggedright\arraybackslash}p{2.45cm}
+>{\centering\arraybackslash}p{4.05cm}
+>{\raggedright\arraybackslash}X}
+\toprule
+\rowcolor{archdark}
+\color{white}\textbf{ID} &
+\color{white}\textbf{Assessment} &
+\color{white}\textbf{Evidence retained for the defense} \\
+\midrule
+
+REQ-MOTION & \status{statusDemo}{DEMONSTRATED} &
+Closed-loop DF/PF tracking with sub-degree RMSE in the reported tests. \\
+
+REQ-USE & \status{statusDemo}{PLATFORM} &
+Integrated operation on a seated / non-weight-bearing mannequin setup. \\
+
+REQ-FIT & \status{statusDesign}{DESIGN} &
+Adjustable tibial fixation, sliding foot length, and mechanism positioning implemented. \\
+
+REQ-ALIGN & \status{statusDesign}{DESIGN} &
+Tibial rail and adjustable tracking mechanism allow pre-operation repositioning. \\
+
+REQ-COMP & \status{statusDesign}{DESIGN} &
+Spring-linked tracking mechanism provides limited passive out-of-plane accommodation. \\
+
+REQ-ACT & \status{statusDemo}{FUNCTIONAL} &
+Opposing flexor/extensor SMA groups generated bidirectional sagittal motion. \\
+
+REQ-TRANS & \status{statusDemo}{FUNCTIONAL} &
+Bowden/PTFE transmission operated throughout tracking, repeatability, and endurance protocols. \\
+
+REQ-SENSE & \status{statusDemo}{FUNCTIONAL} &
+Hall-effect encoder supplied the relative-angle feedback used in closed loop. \\
+
+REQ-CTRL & \status{statusPartial}{PARTIAL} &
+BPID tracking, directional allocation, and mutually exclusive final commands were evidenced. \\
+
+REQ-HEAT & \status{statusPartial}{PARTIAL} &
+PWM modulation, zero-command intervals, mutual exclusion, and scheduled recovery reduce unnecessary command-level heating. \\
+
+REQ-EVAL & \status{statusDemo}{ENGINEERING} &
+Campaign covered transmission condition, tracking, repeatability, and prolonged active/recovery operation. \\
+\bottomrule
+\end{tabularx}
+
+\vspace{3mm}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{5.0cm} X@{}}
+\rowcolor{archmuted}
+Main verification still pending &
+Human fit/comfort and pressure; independent angle metrology; force/torque and thermal/electrical measurement;
+fault-injection and robustness tests; multi-prototype and ethics-approved human evaluation. \\
+\end{tabularx}
+
+\vspace{2mm}
+{\footnotesize\color{archslate}
+\status{statusDemo}{DEMONSTRATED / FUNCTIONAL}\quad
+\status{statusDesign}{IMPLEMENTED BY DESIGN}\quad
+\status{statusPartial}{PARTIALLY SUPPORTED}
+\quad Status refers only to the mannequin-based engineering scope of the thesis.}
+\end{minipage}
+\end{document}

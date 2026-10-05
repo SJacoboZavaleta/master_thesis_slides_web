@@ -1,0 +1,72 @@
+\documentclass[border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx,booktabs,array,colortbl}
+\usepackage{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{archdark}{HTML}{263142}
+\definecolor{archslate}{HTML}{64748B}
+\definecolor{archmuted}{HTML}{EEF2F7}
+\definecolor{currentFill}{HTML}{FFF3D6}
+\definecolor{currentEdge}{HTML}{D99A2B}
+
+\begin{document}
+\begin{minipage}{24.0cm}
+\centering
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.18}
+\small
+
+\begin{tabularx}{\linewidth}{
+>{\bfseries\raggedright\arraybackslash}p{3.05cm}
+>{\raggedright\arraybackslash}p{4.25cm}
+>{\raggedright\arraybackslash}p{5.25cm}
+>{\raggedright\arraybackslash}p{3.7cm}
+>{\raggedright\arraybackslash}X}
+\toprule
+\rowcolor{archdark}
+\color{white}\textbf{Study} &
+\color{white}\textbf{Architecture} &
+\color{white}\textbf{Control / sensing} &
+\color{white}\textbf{Cooling / recovery} &
+\color{white}\textbf{Relevance to this thesis} \\
+\midrule
+Copaci et al. &
+Opposing flexible SMA/Bowden actuators; upper-limb exoskeleton &
+Bilinear PID + PWM + joint-position feedback &
+Natural convection &
+Direct actuator/control lineage; different joint and loading. \\
+
+Hau et al. &
+Opposed SMA linear actuators acting on an ankle footplate; stationary platform &
+Discrete state/threshold control + position/force feedback &
+Forced air &
+Direct antagonistic ankle precedent; non-wearable and actively cooled. \\
+
+Mansilla Navarro et al. &
+Wearable soft/exosuit; opposing Bowden/PTFE SMA actuators &
+Two-level control + IMU feedback + bilinear low-level regulation &
+Passive cooling with recovery intervals &
+Closest wearable control lineage; trajectory period strongly affects error. \\
+
+Zhu et al. &
+Opposing SMA wire groups with differential pulleys &
+PI closed-loop angular control &
+Forced air &
+Useful angular-error benchmark under different geometry, load, and cooling. \\
+
+\rowcolor{currentFill}
+\textbf{Present thesis} &
+\textbf{Adjustable wearable ankle exoskeleton; antagonistic three-wire groups + Bowden/PTFE} &
+\textbf{Relative-angle feedback + State Manager + BPID + Safety Supervisor + final gating} &
+\textbf{Passive recovery opportunities + manually scheduled long-duration recovery} &
+\textbf{Mannequin-based evaluation: transmission sensitivity, repeatability, and 38-min active/recovery operation.} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{2.5mm}
+{\footnotesize\color{archslate}
+Contextual positioning only -- not a performance ranking. Geometry, load, cooling, sensing, trajectory, and validation protocols differ across studies.}
+\end{minipage}
+\end{document}

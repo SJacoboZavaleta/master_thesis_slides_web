@@ -1,0 +1,120 @@
+
+\documentclass[border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx,booktabs,array,colortbl}
+\usepackage{tikz}
+\usepackage{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{archdark}{HTML}{263142}
+\definecolor{archslate}{HTML}{64748B}
+\definecolor{archlight}{HTML}{F8FAFC}
+\definecolor{archmuted}{HTML}{EEF2F7}
+
+% Exact subsystem palette from the approved TFM
+\definecolor{subsysTUFill}{HTML}{DCEAF7}
+\definecolor{subsysFUFill}{HTML}{DDEED8}
+\definecolor{subsysATMFill}{HTML}{F7E6B8}
+\definecolor{subsysACTFill}{HTML}{F3D8DE}
+\definecolor{subsysELECFill}{HTML}{E4DDF2}
+\definecolor{subsysCTRLFill}{HTML}{D6ECEF}
+\definecolor{subsysEXPFill}{HTML}{E5E7EB}
+
+% Verification palette
+\definecolor{statusDemo}{HTML}{DDEED8}
+\definecolor{statusDesign}{HTML}{DCEAF7}
+\definecolor{statusPartial}{HTML}{F7E6B8}
+\definecolor{statusInk}{HTML}{263142}
+
+
+\newcommand{\chip}[2]{%
+\tikz[baseline=(X.base)]\node[
+    draw=archdark!35,
+    fill=#1,
+    rounded corners=2pt,
+    inner xsep=3.5pt,
+    inner ysep=1.4pt,
+    font=\scriptsize\bfseries
+](X){#2};}
+
+\newcommand{\TU}{\chip{subsysTUFill}{TU}}
+\newcommand{\FU}{\chip{subsysFUFill}{FU}}
+\newcommand{\ATM}{\chip{subsysATMFill}{ATM}}
+\newcommand{\ACT}{\chip{subsysACTFill}{ACT}}
+\newcommand{\ELEC}{\chip{subsysELECFill}{ELEC}}
+\newcommand{\CTRL}{\chip{subsysCTRLFill}{CTRL}}
+\newcommand{\EXP}{\chip{subsysEXPFill}{EXP}}
+
+\begin{document}
+\begin{minipage}{23.6cm}
+\centering
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.18}
+\small
+
+\begin{tabularx}{\linewidth}{
+>{\bfseries\raggedright\arraybackslash}p{2.45cm}
+>{\raggedright\arraybackslash}p{4.7cm}
+>{\raggedright\arraybackslash}X
+>{\raggedright\arraybackslash}p{5.6cm}}
+\toprule
+\rowcolor{archdark}
+\color{white}\textbf{ID} &
+\color{white}\textbf{Design driver} &
+\color{white}\textbf{Engineering requirement} &
+\color{white}\textbf{Mapped subsystem(s)} \\
+\midrule
+REQ-MOTION & Slow sagittal mobilization &
+Controlled dorsiflexion--plantarflexion under angular feedback. &
+\ATM\ \ACT\ \CTRL \\
+
+REQ-USE & Early rehabilitation before gait &
+Operate without walking or body-weight support. &
+\TU\ \FU\ \EXP \\
+
+REQ-FIT & Anthropometric variability &
+Provide adjustment at tibial and foot interfaces. &
+\TU\ \FU\ \ATM \\
+
+REQ-ALIGN & Ankle is not a fixed hinge &
+Provide practical geometric positioning of the measurement mechanism. &
+\TU\ \ATM \\
+
+REQ-COMP & Secondary motion / residual misalignment &
+Tolerate limited out-of-plane motion without active control. &
+\ATM \\
+
+REQ-ACT & Bidirectional motion needs opposing tensile actions &
+Implement dorsiflexion- and plantarflexion-oriented SMA groups. &
+\ACT \\
+
+REQ-TRANS & Remote actuation with limited distal bulk &
+Provide flexible tensile transmission to tibial and foot structures. &
+\TU\ \FU\ \ACT \\
+
+REQ-SENSE & Closed-loop control needs a repeatable angle &
+Integrate non-contact relative-angle feedback. &
+\ATM\ \ELEC \\
+
+REQ-CTRL & Opposing actuators require coordination &
+Provide tracking, directional allocation, safety supervision, and final gating. &
+\ELEC\ \CTRL \\
+
+REQ-HEAT & SMA heating is faster than passive cooling &
+Reduce unnecessary heating and provide zero-command recovery opportunities. &
+\ACT\ \CTRL \\
+
+REQ-EVAL & Engineering characterization precedes human evaluation &
+Support repeatable preliminary evaluation of the integrated system. &
+\EXP \\
+\bottomrule
+\end{tabularx}
+
+\vspace{2.5mm}
+{\footnotesize\color{archslate}
+Subsystem colours are consistent with the system architecture:
+TU tibial unit; FU foot unit; ATM angle tracking; ACT SMA actuation/transmission;
+ELEC power/sensing electronics; CTRL embedded control/supervision; EXP experimental infrastructure.}
+\end{minipage}
+\end{document}

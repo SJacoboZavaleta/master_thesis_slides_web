@@ -1,0 +1,37 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[box, fill=white, minimum width=6.9cm, minimum height=5.65cm] (frame) at (7.0,4.45) {};
+\node[glabel, anchor=west, fill=subsysTUFill] at ([xshift=2mm]frame.north west) {Tibial-unit architecture};
+
+\node[box, fill=subsysTUFill, minimum width=3.15cm, minimum height=0.86cm] (outer) at (7.0,5.95)
+{\textbf{Outer shell}};
+\node[softbox, minimum width=2.8cm, minimum height=0.78cm] (inner) at (7.0,3.75)
+{\textbf{Inner interface}};
+
+% Vertical rail inside frame
+\draw[flow] (7.65,6.75) -- (7.65,6.18);
+\node[annot, anchor=west, align=left] at (8.35,6.52) {Vertical\\setup rail};
+
+% Flexible links with clean label
+\draw[relation, dashed] ([xshift=-0.56cm]outer.south) -- ([xshift=-0.33cm]inner.north);
+\draw[relation, dashed] ([xshift=0.56cm]outer.south) -- ([xshift=0.33cm]inner.north);
+\node[tinylabel, align=center] at (7.0,4.84) {flexible\\links};
+
+% Anterior hardpoint
+\draw[relation] (inner.south) -- (7.0,2.55);
+\fill[archdark] (7.0,2.55) circle (0.07cm);
+\node[annot, anchor=north] at (7.0,2.1) {anterior\\hardpoint};
+
+% Posterior hardpoint avoiding overlap
+\fill[archdark] (5.95,6.55) circle (0.07cm);
+\draw[relation] (5.95,6.55) -- (6.48,6.02);
+\node[annot, align=right, anchor=east] at (5.45,6.67) {posterior\\hardpoint};
+
+% BOA closure
+\node[box, fill=white, minimum width=0.72cm, minimum height=0.72cm, rounded corners=10pt, font=\scriptsize\bfseries\sffamily] (boaL) at (4.95,3.75) {BOA};
+\node[box, fill=white, minimum width=0.72cm, minimum height=0.72cm, rounded corners=10pt, font=\scriptsize\bfseries\sffamily] (boaR) at (9.05,3.75) {BOA};
+\draw[relation] (boaL.east) -- (inner.west);
+\draw[relation] (inner.east) -- (boaR.west);
+\draw[relation] (boaL.north) to[out=90,in=205] ([xshift=-1.08cm]outer.south);
+\draw[relation] (boaR.north) to[out=90,in=-25] ([xshift=1.08cm]outer.south);
+\node[annot] at (4.55,4.78) {BOA lace};
+\end{tikzpicture}

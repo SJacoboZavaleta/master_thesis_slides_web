@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148.24983mm"
+   height="86.721527mm"
+   viewBox="0 0 148.24984 86.721529"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="system_architecture.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.868594"
+     inkscape:cx="280.15716"
+     inkscape:cy="164.02707"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer9" /><defs
+     id="defs1" /><g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-27.448781,-112.98129)"><g
+       id="g1"
+       inkscape:label="1"
+       transform="matrix(0.26458333,0,0,0.26458333,25.339809,94.014745)"><path
+         id="path3"
+         d="M 170.71129,114.39537 H 49.548843 c -2.447382,0 -4.431371,1.90194 -4.431371,4.24813 v 27.38708 c 0,2.34618 1.983989,4.24811 4.431371,4.24811 H 170.71129 c 2.4474,0 4.43137,-1.90193 4.43137,-4.24811 V 118.6435 c 0,-2.34619 -1.98397,-4.24813 -4.43137,-4.24813 z"
+         style="fill:#dceaf7;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.1118;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path5"
+         d="M 373.73495,114.39165 H 219.23503 c -2.41422,0 -4.37129,1.90233 -4.37129,4.24901 v 27.39277 c 0,2.34666 1.95707,4.24898 4.37129,4.24898 h 154.49992 c 2.41421,0 4.37128,-1.90232 4.37128,-4.24898 v -27.39277 c 0,-2.34668 -1.95707,-4.24901 -4.37128,-4.24901 z"
+         style="fill:#f7e6b8;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.10435;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path7"
+         d="M 541.09804,114.3841 H 424.87348 c -2.34765,0 -4.25077,1.90313 -4.25077,4.2508 v 27.40429 c 0,2.34765 1.90312,4.25077 4.25077,4.25077 h 116.22456 c 2.34764,0 4.25077,-1.90312 4.25077,-4.25077 V 118.6349 c 0,-2.34767 -1.90313,-4.2508 -4.25077,-4.2508 z"
+         style="fill:#ddeed8;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.08925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path9"
+         d="M 158.37945,197.01022 H 188.1545"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="cc" /><path
+         id="path10"
+         d="m 378.23323,132.33704 h 41.84484"
+         style="fill:none;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:nodetypes="cc" /><path
+         id="path11"
+         d="M 549.94722,98.863621 H 34.452712 c -3.204257,0 -5.801751,2.357739 -5.801751,5.266209 v 50.02938 c 0,2.90849 2.597494,5.26622 5.801751,5.26622 H 549.94722 c 3.20425,0 5.80175,-2.35773 5.80175,-5.26622 v -50.02938 c 0,-2.90847 -2.5975,-5.266209 -5.80175,-5.266209 z"
+         style="fill:none;stroke:#64748b;stroke-width:0.8844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:3.685, 3.685;stroke-dashoffset:0;stroke-opacity:1" /><path
+         id="path12"
+         d="m 54.14148,218.97452 163.51918,0 v 8.34636 l -163.51918,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="ccccc" /><path
+         id="path13"
+         d="M 390.84512,189.98184 H 213.87401 c -2.40269,0 -4.35042,1.90247 -4.35042,4.2493 v 27.39476 c 0,2.34685 1.94773,4.2493 4.35042,4.2493 h 176.97111 c 2.40267,0 4.35041,-1.90245 4.35041,-4.2493 v -27.39476 c 0,-2.34683 -1.94774,-4.2493 -4.35041,-4.2493 z"
+         style="fill:#f3d8de;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.10175;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path14"
+         d="M 224.02823,265.58226 H 57.168282 c -2.482449,0 -4.494856,1.90152 -4.494856,4.24719 v 27.38114 c 0,2.34567 2.012407,4.24716 4.494856,4.24716 H 224.02823 c 2.48247,0 4.49487,-1.90149 4.49487,-4.24716 v -27.38114 c 0,-2.34567 -2.0124,-4.24719 -4.49487,-4.24719 z"
+         style="fill:#e4ddf2;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.11961;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path16"
+         d="M 551.48032,265.59235 H 363.8433 c -2.57418,0 -4.66096,1.90045 -4.66096,4.24481 v 27.36572 c 0,2.34436 2.08678,4.24478 4.66096,4.24478 h 187.63702 c 2.57419,0 4.66096,-1.90042 4.66096,-4.24478 v -27.36572 c 0,-2.34436 -2.08677,-4.24481 -4.66096,-4.24481 z"
+         style="fill:#d6ecef;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.13979;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path18"
+         d="m 252.28642,154.18979 v 14.74286"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="cc" /><path
+         id="path20"
+         d="m 304.8117,186.22367 h 95.91913 v -9.02368 H 304.8117 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" /><path
+         id="path21"
+         d="M 252.28642,168.66342 H 107.71794 v 8.75925"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="ccc" /><path
+         id="path22"
+         d="m 107.46925,153.39708 c -0.13975,0.6308 -0.93164,3.4036 -1.79344,5.13661 h 3.58688 c -0.8618,-1.73301 -1.65369,-4.50581 -1.79344,-5.13661 z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path23"
+         d="m 252.28642,168.66342 h 144.56891 v 8.72599"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="ccc" /><path
+         id="path24"
+         d="m 492.98577,153.39708 c -0.13975,0.6308 -0.93164,3.4036 -1.79344,5.13661 h 3.58688 c -0.8618,-1.73301 -1.65369,-4.50581 -1.79344,-5.13661 z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path25"
+         d="M 231.53207,183.13705 V 161.52548 H 133.2299 v -58.08966"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="cccc" /><path
+         id="path26"
+         d="M 3.85246,0 C 3.37936,0.10481 1.29976,0.69873 0,1.34508 V -1.34508 C 1.29976,-0.69873 3.37936,-0.10481 3.85246,0 Z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0,1.3333333,1.3333333,0,141.4852,257.10291)" /><path
+         id="path27"
+         d="m 110.91972,127.9685 h 44.62035 v 8.31715 h -44.62035 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)" /><path
+         id="path28"
+         d="m 138.89925,97.49617 v 13.65861 h 62.25591 v 9.29922"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="cccc" /><path
+         id="path29"
+         d="m 231.98949,228.96181 c -0.13974,0.6308 -0.93164,3.4036 -1.79344,5.13662 h 3.58688 c -0.8618,-1.73302 -1.65369,-4.50582 -1.79344,-5.13662 z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path30"
+         d="m 152.73559,244.42204 h 76.5186 v -11.08953 h -76.5186 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" /><path
+         id="path31"
+         d="m 202.71313,83.62299 90.02611,0"
+         style="fill:none;stroke:#263142;stroke-width:0.87672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)"
+         sodipodi:nodetypes="cc" /><path
+         id="path32"
+         d="m 231.96992,283.52001 c 0.56037,0.12511 3.02358,0.83407 4.56309,1.6056 v -3.2112 c -1.53951,0.77153 -4.00272,1.48049 -4.56309,1.6056 z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path33"
+         d="m 355.82292,283.52001 c -0.56037,-0.12511 -3.02358,-0.83407 -4.56309,-1.6056 v 3.2112 c 1.53951,-0.77153 4.00272,-1.48049 4.56309,-1.6056 z"
+         style="fill:#263142;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.16896;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path34"
+         d="m 215.46071,84.06136 h 68.6552 v 9.0365 h -68.6552 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(1.3333333,0,0,-1.3333333,-36.154667,395.01733)" /><path
+         id="path35"
+         d="M 560.71935,81.5975 H 15.15097 c -3.654447,0 -6.6168986,2.997092 -6.6168986,6.694253 V 311.21291 c 0,3.69715 2.9624516,6.69425 6.6168986,6.69425 h 545.56838 c 3.65444,0 6.6169,-2.9971 6.6169,-6.69425 V 88.291753 c 0,-3.697161 -2.96246,-6.694253 -6.6169,-6.694253 z"
+         style="fill:none;stroke:#263142;stroke-width:1.12631;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path36"
+         d="M 15.795705,82.813071 H 169.51612 V 71.684591 H 15.795705 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.42708" /><path
+         id="path37"
+         d="M 554.40663,348.53302 H 23.466885 c -2.385243,0 -4.318858,1.90264 -4.318858,4.2497 v 25.50798 c 0,2.34706 1.933615,4.24971 4.318858,4.24971 H 554.40663 c 2.38526,0 4.31887,-1.90265 4.31887,-4.24971 v -25.50798 c 0,-2.34706 -1.93361,-4.2497 -4.31887,-4.2497 z"
+         style="fill:#e5e7eb;fill-opacity:1;fill-rule:nonzero;stroke:#263142;stroke-width:1.0978;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" /><path
+         id="path38"
+         d="M 561.88846,332.10723 H 16.180014 c -3.264057,0 -5.91003,2.67646 -5.91003,5.97814 v 54.9027 c 0,3.30163 2.645973,5.97812 5.91003,5.97812 H 561.88846 c 3.26405,0 5.91002,-2.67649 5.91002,-5.97812 v -54.9027 c 0,-3.30168 -2.64597,-5.97814 -5.91002,-5.97814 z"
+         style="fill:none;stroke:#64748b;stroke-width:0.951039;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:3.96266, 3.96266;stroke-dashoffset:0;stroke-opacity:1" /><path
+         id="path39"
+         d="M 17.619278,337.19594 H 272.70487 V 326.06747 H 17.619278 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
+         sodipodi:nodetypes="ccccc" /><path
+         id="path40"
+         d="m 292.22751,318.18786 -2.9e-4,14.10606"
+         style="fill:none;stroke:#64748b;stroke-width:0.956427;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:3.98511, 3.98511;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:nodetypes="cc" /></g></g><g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="text"
+     style="fill:#000000"
+     transform="translate(3.9453027e-7,-15.819157)"><text
+       id="text3"
+       xml:space="preserve"
+       transform="matrix(0.35277777,0,0,0.35277777,24.048442,30.725274)"
+       style="fill:#000000;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.0000002px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"><tspan
+         id="tspan4"
+         style="font-variant:normal;font-weight:normal;font-size:9.0000002px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="0"
+         y="0">TU</tspan><tspan
+         id="tspan5"
+         style="font-variant:normal;font-weight:normal;font-size:9.0000002px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="-36.073002"
+         dx="0 -0.26002559 0 0 0 0 0 0 0 0 3.0754752 0 0 0 0 0 3.0665088"
+         y="10.959">AdjustableTibialUnit</tspan></text><text
+       id="text5"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="71.099472"
+       y="30.725273"><tspan
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="71.099472"
+         dx="0 -0.27835691"
+         y="30.725273">ATM</tspan><tspan
+         id="tspan7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="56.254578"
+         dx="0 0 0 0 0 0 0 -0.27203062 0 0 0 0 0 0 1.0849593"
+         y="34.591366">Angle-TrackingMechanism</tspan></text><text
+       id="text7"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="122.52707"
+       y="30.725273"><tspan
+         id="tspan8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="122.52707"
+         y="30.725273">FU</tspan><tspan
+         id="tspan9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="110.36998"
+         dx="0 -0.09173125 0 0 0 0 0 0 0 0 1.0849593 -0.09173125 0.09173125 0 1.0817962"
+         y="34.591366">AdjustableFootUnit</tspan></text><text
+       id="text12"
+       xml:space="preserve"
+       transform="matrix(0.35277777,0,0,0.35277777,8.1628586,23.377265)"
+       style="fill:#000000;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.0000002px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"><tspan
+         id="tspan12"
+         style="font-variant:normal;font-weight:normal;font-size:9.0000002px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="0"
+         dx="0 0 0.2470731 0 0 0 0 0 0 0 0 0 3.0206678 0 0 0 0 0 0 0 0 0 3.0126977"
+         y="0">Body-mountedmechanicalassembly</tspan></text><text
+       id="text13"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="73.545631"
+       y="51.032574"><tspan
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="73.545631"
+         dx="0 -0.09173125"
+         y="51.032574">ACT</tspan><tspan
+         id="tspan14"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="55.195194"
+         dx="0 0 0 1.0849593 -0.09173125 0 0 0 0 0 0 0 1.0817962 1.0849593 -0.27203062"
+         y="54.898666">SMAActuation&amp;Transmission</tspan></text><text
+       id="text14"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="29.306593"
+       y="70.725334"><tspan
+         id="tspan15"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="29.306593"
+         y="70.725334">ELEC</tspan><tspan
+         id="tspan16"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="13.783669"
+         dx="0 -0.088568106 -0.09173125 -0.09173125 0 1.0849593 1.0817962 0 0 0 0 0 0 1.0849593"
+         y="74.591423">Power&amp;SensingElectronics</tspan></text><text
+       id="text16"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="113.07719"
+       y="70.725334"><tspan
+         id="tspan17"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="113.07719"
+         y="70.725334">CTRL</tspan><tspan
+         id="tspan18"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="94.500275"
+         dx="0 0 0 0.09173125 -0.0031631468 0.0031631468 0 0 1.0817962 0 0 0 0 0 0 1.0817962 1.0849593 0 0 0.09173125"
+         y="74.591423">EmbeddedControl&amp;Supervision</tspan></text><text
+       id="text20"
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#000000;stroke-width:0.352778;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+       x="79.135399"
+       y="45.402592"><tspan
+         id="tspan20"
+         style="font-variant:normal;font-weight:normal;font-size:3.175px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="79.135399"
+         dx="0 0 0 0 0 0 0 0.99533266"
+         y="45.402592">tensiletransmission</tspan></text><text
+       id="text27"
+       xml:space="preserve"
+       transform="matrix(0.35277777,0,0,0.35277777,28.052117,55.483924)"
+       style="fill:#000000;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.0000002px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"><tspan
+         id="tspan27"
+         style="font-variant:normal;font-weight:normal;font-size:9.0000002px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="0"
+         dx="0 0 0 0 0 2.8214154"
+         y="0">anglesignal</tspan></text><text
+       id="text30"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="39.894592"
+       y="65.230438"><tspan
+         id="tspan30"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="39.894592"
+         dx="0 0 0 0 0 0 0 0 0.99533266 0.084350228 -0.084350228 -0.081538551"
+         y="65.230438">switchedpower</tspan></text><text
+       id="text34"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.352778"
+       x="62.276173"
+       y="70.617935"><tspan
+         id="tspan34"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+         x="62.276173"
+         dx="0 0 0 0 0 0 0 0.99533266 0.99533266"
+         y="70.617935">control/feedback</tspan></text><text
+       id="text36"
+       xml:space="preserve"
+       transform="matrix(0.35277777,0,0,0.35277777,2.8080446,18.02245)"
+       style="fill:#000000;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.0000002px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"><tspan
+         id="tspan36"
+         style="font-variant:normal;font-weight:normal;font-size:9.0000002px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="0"
+         dx="0 0 0 0 0 3.0126977 0 0 0 0 -0.2470731 0 0 0 0 0 3.0126977"
+         y="0">Ankleexoskeletonsystem</tspan></text><text
+       id="text37"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.13001px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.347779"
+       x="5.0265341"
+       y="93.069183"
+       transform="scale(0.98582973,1.014374)"><tspan
+         id="tspan37"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.13001px;font-family:Manrope;-inkscape-font-specification:'Manrope, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.347779"
+         x="5.0265341"
+         dx="0 0 0 1.0679185 0 0 0.090431392 0 0 0 0 0 0 0 0 1.0664668 0 0 0 0 0 0 0 0 0 0 0 0 0 3.9431744 0 0 0 0 0 0 0 0 3.9440212 3.9431744 0 0 0 1.0664668 0 0 0 0 0 0 0 3.9440131 3.943522 0 0 0.090431392 -0.090431392 0 0 0 -0.090431392 0 1.0695851 0 1.0664668"
+         y="93.069183">EXPExperimentalInfrastructureMannequin•Hostcomputer•LaboratoryDCsupply</tspan></text><text
+       id="text39"
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#000000;stroke-width:0.352778;-inkscape-font-specification:'Manrope, @wght=400';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+       x="3.2906446"
+       y="85.327156"><tspan
+         id="tspan39"
+         style="font-variant:normal;font-weight:normal;font-size:3.175px;font-family:Manrope;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778;-inkscape-font-specification:'Manrope, @wght=400';font-style:normal;font-stretch:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400"
+         x="3.2906446"
+         dx="0 0 0 0 0 0 0 1.0628128 0 0 0 0 0 0 0 0 0 0 -0.087161899 0 0 0 0 0 1.0628128 0 0 0 0 0 1.0656245 0.087161899 0 0 0 0 -0.087161899"
+         y="85.327156">Outsideankle-exoskeletonsystemboundary</tspan></text></g></svg>

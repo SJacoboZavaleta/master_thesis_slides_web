@@ -1,0 +1,45 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[slide title] at (8.9,9.95) {SYSTEM ARCHITECTURE};
+\node[slide subtitle, text width=14.8cm] at (8.9,9.28)
+{Compact system view preserving the original subsystem decomposition and the principal interfaces between mechanics, actuation, electronics, and control.};
+
+% Top mechanical row
+\node[box, fill=subsysTUFill, minimum width=3.3cm, minimum height=0.95cm] (tu) at (3.8,6.95)
+{\textbf{TU}\\Adjustable Tibial Unit};
+\node[box, fill=subsysATMFill, minimum width=4.2cm, minimum height=0.95cm] (atm) at (8.9,6.95)
+{\textbf{ATM}\\Angle-Tracking Mechanism};
+\node[box, fill=subsysFUFill, minimum width=3.3cm, minimum height=0.95cm] (fu) at (14.0,6.95)
+{\textbf{FU}\\Adjustable Foot Unit};
+\draw[relation] (tu.east) -- (atm.west);
+\draw[relation] (atm.east) -- (fu.west);
+\node[group, fit=(tu)(atm)(fu)] (bodygroup) {};
+\node[glabel, anchor=west] at ([xshift=2mm]bodygroup.north west) {Body-mounted mechanical assembly};
+
+% Middle + bottom nodes
+\node[box, fill=subsysACTFill, minimum width=4.8cm, minimum height=0.95cm] (act) at (8.9,4.95)
+{\textbf{ACT}\\SMA Actuation \& Transmission};
+\node[box, fill=subsysELECFill, minimum width=4.4cm, minimum height=0.95cm] (elec) at (4.7,2.95)
+{\textbf{ELEC}\\Power \& Sensing Electronics};
+\node[box, fill=subsysCTRLFill, minimum width=4.4cm, minimum height=0.95cm] (ctrl) at (13.1,2.95)
+{\textbf{CTRL}\\Embedded Control \& Supervision};
+
+% Signal / power / transmission routing
+\coordinate (transj) at (8.9,5.95);
+\draw[flow] (act.north) -- node[flabel, pos=.40, right] {tensile transmission} (transj);
+\draw[flow] (transj) -| ([yshift=-1mm]tu.south);
+\draw[flow] (transj) -| ([yshift=-1mm]fu.south);
+
+\draw[flow] (atm.south) -- ++(0,-0.55) -| node[flabel, pos=.72, below] {angle signal} (elec.north);
+\draw[flow] ([xshift=2mm]elec.north) -- ++(0,0.9) -| node[flabel, pos=.35, above] {switched power} (act.west);
+\draw[bidir] (elec.east) -- node[flabel, pos=.5, above] {control / feedback} (ctrl.west);
+
+% Boundaries
+\node[boundary, fit=(bodygroup)(act)(elec)(ctrl)] (system) {};
+\node[glabel, anchor=west] at ([xshift=2mm]system.north west) {Ankle exoskeleton system};
+
+\node[box, fill=subsysEXPFill, minimum width=12.8cm, minimum height=0.9cm] (exp) at (8.9,0.78)
+{\textbf{EXP} Experimental Infrastructure\hspace{4mm}$\bullet$\hspace{4mm}Mannequin\hspace{4mm}$\bullet$\hspace{4mm}Host computer\hspace{4mm}$\bullet$\hspace{4mm}Laboratory DC supply};
+\node[group, fit=(exp)] (expgroup) {};
+\node[glabel, anchor=west] at ([xshift=2mm]expgroup.north west) {Outside ankle-exoskeleton system boundary};
+\draw[dashed, draw=archslate, line width=0.72pt] (system.south) -- (expgroup.north);
+\end{tikzpicture}

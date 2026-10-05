@@ -1,0 +1,61 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[slide title] at (8.2,10.0) {RAPID-CONTROL-PROTOTYPING ARCHITECTURE};
+\node[slide subtitle, text width=14.6cm] at (8.2,9.35)
+{Host, embedded target, and physical system exchange references, telemetry, and sensing information during HIL validation.};
+
+% Regions
+\fill[archrosebg!55] (0.25,1.1) rectangle (3.95,8.55);
+\fill[archgoldbg!72] (4.18,1.1) rectangle (10.05,8.55);
+\fill[archaquabg!66] (10.28,1.1) rectangle (15.78,8.55);
+\node[slide kicker] at (2.1,8.0) {HOST COMPUTER};
+\node[slide kicker] at (7.12,8.0) {EMBEDDED TARGET};
+\node[slide kicker] at (13.02,8.0) {PHYSICAL SYSTEM};
+
+% Host
+\node[chip] at (2.1,7.2) {\texttt{ankle\_host}};
+\node[microbox, fill=archrosebg, minimum width=2.52cm, minimum height=0.92cm] (ref) at (2.1,6.0) {Reference\\generation};
+\node[microbox, fill=archrosebg, minimum width=2.8cm, minimum height=0.92cm] (cmd) at (2.1,4.55) {Experiment commands\\\& parameters};
+\node[microbox, fill=archrosebg, minimum width=2.52cm, minimum height=0.92cm] (vis) at (2.1,3.05) {Visualization};
+\node[microbox, fill=archrosebg, minimum width=2.8cm, minimum height=0.92cm] (log) at (2.1,1.65) {MATLAB workspace\\logging};
+\node[microbox bold, fill=white, minimum width=1.6cm, minimum height=0.88cm] (usb) at (4.45,3.85) {USB--VCP\\communication};
+
+% Embedded target
+\node[chip] at (7.12,7.2) {\texttt{ankle\_target} on STM32F407};
+\node[microbox, fill=archgoldbg, minimum width=3.35cm, minimum height=0.92cm] (sense) at (7.12,6.0) {Encoder acquisition\\\& calibration};
+\node[microbox, fill=archgoldbg, minimum width=3.8cm, minimum height=0.96cm] (control) at (7.12,4.76) {State Manager + BPID\\Safety Supervisor + gating};
+\node[microbox, fill=archgoldbg, minimum width=3.5cm, minimum height=0.92cm] (pwm) at (7.12,3.02) {PWM generation\\\& physical outputs};
+\node[microbox, fill=archgoldbg, minimum width=3.35cm, minimum height=0.92cm] (tele) at (7.12,1.65) {Telemetry\\packaging};
+
+% Physical system
+\node[microbox, fill=archaquabg, minimum width=3.0cm, minimum height=0.92cm] (encoder) at (13.05,6.0) {AS5040\\angle sensing};
+\node[microbox, fill=archaquabg, minimum width=3.0cm, minimum height=0.92cm] (power) at (13.05,4.76) {SMA power board};
+\node[microbox, fill=archaquabg, minimum width=3.0cm, minimum height=0.92cm] (act) at (13.05,3.02) {Antagonistic\\SMA actuation};
+\node[microbox, fill=archaquabg, minimum width=3.05cm, minimum height=0.92cm] (plant) at (13.05,1.65) {Mounted ankle exoskeleton\\+ mannequin plant};
+
+% Host internal
+\draw[flow] (ref.south) -- (cmd.north);
+\draw[flow] (vis.south) -- (log.north);
+\draw[flow] (usb.west) to[out=205,in=0] (vis.east);
+
+% Interface host-target
+\draw[flow] (cmd.east) -- (usb.west);
+\node[tinylabel] at (3.38,4.16) {references / parameters};
+\draw[flow] (usb.east) -- ++(0.35,0) |- (control.west);
+\node[tinylabel] at (5.95,4.18) {USB commands};
+\draw[flow] (tele.west) -- ++(-0.78,0) -| (usb.south);
+\node[tinylabel] at (3.62,2.02) {telemetry};
+
+% Embedded target internal
+\draw[flow] (sense.south) -- node[flabel, pos=.55, right] {$\theta[k]$} (control.north);
+\draw[flow] (control.south) -- node[flabel, pos=.58, right] {$u_{F,out}[k],\;u_{E,out}[k]$} (pwm.north);
+\draw[flow] (pwm.south) -- (tele.north);
+
+% Physical system
+\draw[flow] (pwm.east) -- node[flabel, above] {PWM / GPIO} (power.west);
+\draw[flow] (power.south) -- node[flabel, pos=.5, right] {switched power} (act.north);
+\draw[flow] (act.south) -- node[flabel, pos=.5, right] {tensile action} (plant.north);
+\draw[flow] (plant.east) -- ++(0.62,0) -- ++(0,4.35) -- node[flabel, pos=.27, right] {relative rotation} (encoder.east);
+\draw[flow] (encoder.west) -- node[flabel, above] {SPI encoder data} (sense.east);
+
+\node[annot, anchor=west] at (4.7,0.72) {\emph{Real physical plant; no simulated plant is used in the reported experiments.}};
+\end{tikzpicture}

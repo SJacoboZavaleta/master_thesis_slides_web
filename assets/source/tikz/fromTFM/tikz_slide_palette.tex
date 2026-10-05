@@ -1,0 +1,53 @@
+% Shared palette and styles for slide-optimised TikZ figures
+% revised for compactness and cleaner routing.
+\definecolor{archdark}{HTML}{263142}
+\definecolor{archslate}{HTML}{64748B}
+\definecolor{archlight}{HTML}{F8FAFC}
+\definecolor{archmuted}{HTML}{EEF2F7}
+\definecolor{archgold}{HTML}{D99A2B}
+\definecolor{archgoldbg}{HTML}{FFF3D6}
+\definecolor{archgreen}{HTML}{6B9B68}
+\definecolor{archgreenbg}{HTML}{E6F2E2}
+\definecolor{archrose}{HTML}{C95C6A}
+\definecolor{archrosebg}{HTML}{F9E0E4}
+\definecolor{archaqua}{HTML}{5FB7C1}
+\definecolor{archaquabg}{HTML}{E2F5F7}
+\definecolor{archlilac}{HTML}{8B7AB8}
+\definecolor{archlilacbg}{HTML}{EDE8F7}
+
+% Exact subsystem palette aligned with the approved TFM architecture
+\definecolor{subsysTUFill}{HTML}{DCEAF7}   % Tibial Unit
+\definecolor{subsysFUFill}{HTML}{DDEED8}   % Foot Unit
+\definecolor{subsysATMFill}{HTML}{F7E6B8}  % Angle-tracking mechanism
+\definecolor{subsysACTFill}{HTML}{F3D8DE}  % SMA actuation and transmission
+\definecolor{subsysELECFill}{HTML}{E4DDF2} % Electronics
+\definecolor{subsysCTRLFill}{HTML}{D6ECEF} % Control and supervision
+\definecolor{subsysEXPFill}{HTML}{E5E7EB}  % Experimental infrastructure
+
+\tikzset{
+  slide title/.style={font=\bfseries\Large\sffamily, text=archdark, align=center},
+  slide subtitle/.style={font=\normalsize\sffamily, text=archslate, align=center},
+  slide kicker/.style={font=\bfseries\footnotesize\sffamily, text=archslate, align=center},
+  box/.style={draw=archdark, rounded corners=3.2pt, line width=0.82pt, align=center,
+              text=archdark, font=\small\sffamily, inner xsep=3.0pt, inner ysep=2.2pt},
+  softbox/.style={box, fill=archlight},
+  strongbox/.style={box, font=\bfseries\small\sffamily},
+  amberbox/.style={box, fill=archgoldbg, draw=archgold, line width=0.95pt},
+  greenbox/.style={box, fill=archgreenbg, draw=archgreen, line width=0.90pt},
+  relation/.style={draw=archdark, line width=0.88pt},
+  flow/.style={-{Latex[length=2.25mm,width=1.45mm]}, draw=archdark, line width=0.88pt},
+  bidir/.style={{Latex[length=2.1mm,width=1.35mm]}-{Latex[length=2.1mm,width=1.35mm]}, draw=archdark, line width=0.88pt},
+  dashedflow/.style={flow, dashed},
+  flabel/.style={font=\footnotesize\sffamily, text=archdark, fill=white, inner xsep=1.7pt, inner ysep=0.55pt, align=center},
+  group/.style={draw=archslate, dashed, rounded corners=4.5pt, line width=0.72pt, inner sep=4.2mm},
+  boundary/.style={draw=archdark, rounded corners=5.2pt, line width=0.88pt, inner sep=5.2mm},
+  glabel/.style={font=\bfseries\footnotesize\sffamily, text=archdark, fill=white, inner xsep=2.1pt, inner ysep=0.55pt},
+  chip/.style={draw=archslate!60, fill=archmuted, rounded corners=2.6pt, font=\footnotesize\sffamily\bfseries,
+               text=archdark, inner xsep=4pt, inner ysep=2.3pt, align=center},
+  tinylabel/.style={font=\scriptsize\sffamily, text=archdark, fill=white, inner xsep=1.5pt, inner ysep=0.45pt},
+  compact/.style={box, inner xsep=2.2pt, inner ysep=1.8pt},
+  microbox/.style={draw=archdark, rounded corners=2.8pt, line width=0.8pt, align=center,
+                   text=archdark, font=\small\sffamily, inner xsep=2.0pt, inner ysep=1.3pt},
+  microbox bold/.style={microbox, font=\bfseries\small\sffamily},
+  annot/.style={font=\scriptsize\sffamily, text=archdark, align=center}
+}

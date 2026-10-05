@@ -1,0 +1,49 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[slide title] at (8.8,7.95) {CONTROL SIGNAL FLOW};
+\node[slide subtitle, text width=15.0cm] at (8.8,7.26)
+{Compact input--output view of the control stack, highlighting the main control variables and the separation between high- and low-level functions.};
+
+% Group boxes
+\node[group, fit={(1.75,3.45) (8.35,5.8)}] (hl) {};
+\node[glabel, anchor=west, fill=archgoldbg] at ([xshift=2mm]hl.north west) {High-level control};
+\node[group, fit={(9.0,1.95) (16.9,5.15)}] (ll) {};
+\node[glabel, anchor=west, fill=archgreenbg] at ([xshift=2mm]ll.north west) {Low-level control and actuation};
+
+% Blocks
+\node[microbox, fill=archgold!35, minimum width=2.0cm, minimum height=0.95cm] (sm) at (4.0,4.55) {State\\Manager};
+\node[microbox, fill=archgold!35, minimum width=2.0cm, minimum height=0.95cm] (ss) at (7.0,4.55) {Safety\\Supervisor};
+\node[microbox, fill=archgreenbg, draw=archgreen, minimum width=2.15cm, minimum height=0.95cm] (pid) at (10.5,3.45) {Bilinear PID};
+\node[microbox, fill=archgold!35, minimum width=2.1cm, minimum height=0.95cm] (gate) at (13.0,3.45) {Actuation\\Gate};
+\node[microbox, fill=white, minimum width=1.35cm, minimum height=0.82cm] (pwm) at (15.35,3.45) {PWM};
+\node[microbox, fill=archaquabg, minimum width=2.75cm, minimum height=0.95cm] (plant) at (15.35,2.15) {Antagonistic SMA\\ankle plant};
+
+% Input and high-level chain
+\coordinate (rin) at (0.9,4.55);
+\draw[flow] (rin) -- (sm.west);
+\node[tinylabel] at (1.7,4.8) {$r[k]$};
+\draw[flow] (sm.east) -- (ss.west);
+\node[tinylabel] at (5.55,4.97) {$s[k]\in\{\mathrm{IDLE,FLEX,EXT}\}$};
+
+% High-to-low routing
+\draw[flow] (sm.south) -- ++(0,-0.9) -| (pid.north);
+\node[tinylabel] at (7.65,3.1) {direction / reference};
+\draw[flow] (ss.south) -- ++(0,-0.5) -| (gate.north);
+\node[tinylabel] at (10.95,4.1) {enable / trip};
+
+% Low-level chain
+\draw[flow] (pid.east) -- (gate.west);
+\node[tinylabel] at (11.74,3.9) {$u_c[k]$};
+\draw[flow] (gate.east) -- (pwm.west);
+\node[tinylabel] at (14.18,3.9) {$u_{F,out}[k],\;u_{E,out}[k]$};
+\draw[flow] (pwm.south) -- (plant.north);
+\node[tinylabel] at (15.78,2.86) {PWM};
+
+% Feedback
+\draw[flow] (plant.west) -- ++(-1.05,0) |- (pid.south);
+\node[tinylabel] at (12.55,2.56) {$y[k]$};
+\node[annot, anchor=east] at (8.95,2.18) {$e[k]=r[k]-y[k]$};
+\draw[relation] (9.02,2.18) -- (9.55,2.18);
+
+% Footer note
+\node[annot, anchor=west] at (9.3,1.08) {Outputs: gated actuator commands and PWM.\quad Feedback: ankle angle $y[k]$.};
+\end{tikzpicture}

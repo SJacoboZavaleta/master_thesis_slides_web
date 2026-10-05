@@ -1,0 +1,56 @@
+\begin{tikzpicture}[font=\sffamily]
+\node[slide title] at (8.8,9.75) {HIERARCHICAL CONTROL ARCHITECTURE};
+\node[slide subtitle, text width=15.2cm] at (8.8,9.1)
+{High-level directional logic, bilinear PID tracking, and safety gating cooperate to regulate antagonistic SMA actuation.};
+
+% Background regions
+\fill[archrosebg!55] (0.35,1.0) rectangle (3.45,8.35);
+\fill[archgoldbg!70] (3.85,1.0) rectangle (10.35,8.35);
+\fill[archaquabg!68] (10.75,1.0) rectangle (17.25,8.35);
+\node[font=\bfseries\itshape\Large\sffamily, text=archdark] at (1.9,7.8) {HOST LEVEL};
+\node[font=\bfseries\itshape\Large\sffamily, text=archdark] at (7.1,7.8) {TARGET LEVEL};
+\node[font=\bfseries\itshape\Large\sffamily, text=archdark] at (14.0,7.8) {PLANT LEVEL};
+
+% Nodes
+\node[microbox, fill=archgoldbg, minimum width=2.1cm, minimum height=0.9cm] (refgen) at (1.9,6.1) {Reference\\Generator};
+\node[microbox, fill=archgoldbg, minimum width=2.1cm, minimum height=0.9cm] (opcmd) at (1.9,3.1) {Operating\\Commands};
+
+\node[microbox, fill=archgold!35, minimum width=2.0cm, minimum height=0.9cm] (state) at (5.8,6.1) {High-Level\\State Manager};
+\node[microbox, fill=archgold!35, minimum width=1.95cm, minimum height=0.9cm] (safety) at (8.45,6.1) {Safety\\Supervisor};
+\node[microbox, fill=archgreenbg, draw=archgreen, minimum width=2.35cm, minimum height=0.9cm] (bpid) at (5.8,3.25) {Low-Level\\BPID Regulation};
+\node[microbox, fill=archgold!35, minimum width=2.35cm, minimum height=0.9cm] (gate) at (8.45,3.25) {Actuator Enable\\\& Safety Gating};
+
+\node[microbox, fill=white, minimum width=2.0cm, minimum height=0.9cm] (power) at (12.7,6.1) {PWM \&\\Power Stage};
+\node[microbox, fill=white, minimum width=2.15cm, minimum height=0.9cm] (sma) at (15.35,6.1) {Antagonistic\\SMA Actuation};
+\node[microbox, fill=archaquabg, minimum width=2.0cm, minimum height=0.9cm] (feedback) at (12.7,3.25) {Angle\\Feedback};
+\node[microbox, fill=archaquabg, minimum width=2.2cm, minimum height=0.9cm] (mech) at (15.35,3.25) {Ankle--Foot\\Mechanics};
+
+% Main arrows
+\draw[flow] (refgen.east) -- (state.west);
+\draw[flow] (opcmd.east) to[out=0,in=-150] (state.south west);
+\draw[flow] (state.east) -- (safety.west);
+\draw[flow] (state.south) -- (bpid.north);
+\draw[flow] (state.south east) -- ++(0.35,-0.28) -- ([xshift=-2mm]gate.north west);
+\draw[flow] (safety.south) -- (gate.north);
+\draw[flow] (bpid.east) -- (gate.west);
+\draw[flow] (gate.east) -- ++(0.7,0) |- (power.south);
+\draw[flow] (power.east) -- (sma.west);
+\draw[flow] (sma.south) -- (mech.north);
+\draw[flow] (mech.west) -- (feedback.east);
+\draw[flow] (feedback.west) -- ++(-0.85,0) |- ([xshift=1mm]bpid.south);
+\draw[flow] (feedback.south) -- ++(0,-0.72) -- ++(-9.25,0) -- ++(0,3.35) -- ([xshift=-1mm]state.south);
+\draw[flow] ([xshift=-1mm]feedback.north west) to[out=115,in=-10] (safety.east);
+
+% Labels placed manually to avoid overlaps
+\node[tinylabel] at (3.8,6.35) {reference};
+\node[tinylabel] at (3.15,4.0) {strategy, enable, reset};
+\node[tinylabel] at (7.1,6.45) {operational enable};
+\node[tinylabel] at (6.95,3.62) {duty-cycle demand};
+\node[tinylabel] at (10.95,5.62) {gated PWM commands};
+\node[tinylabel] at (14.0,6.45) {electrical activation};
+\node[tinylabel] at (15.95,4.9) {tensile action};
+\node[tinylabel] at (14.0,3.58) {relative motion};
+\node[tinylabel] at (10.3,2.45) {angular feedback};
+\node[tinylabel] at (7.1,1.48) {feedback to high-level logic};
+\node[tinylabel] at (10.92,4.88) {tracking signals};
+\end{tikzpicture}

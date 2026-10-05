@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="92.233315mm"
+   height="74.153893mm"
+   viewBox="0 0 92.233315 74.153893"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="test_setup_annotated.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0737236"
+     inkscape:cx="103.91935"
+     inkscape:cy="164.19739"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g17" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker24"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path24" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path28" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-80.168755,-106.09792)">
+    <image
+       width="92.233315"
+       height="74.153893"
+       preserveAspectRatio="none"
+       xlink:href="../../../../../../Im%C3%A1genes/Roboticslab/IMG_20260910_101229_1_resized.jpg"
+       id="image1"
+       x="80.168755"
+       y="106.09792" />
+    <g
+       id="g16"
+       transform="matrix(0.98871852,0,0,0.98871852,203.96336,98.687577)">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.4;stroke:none;stroke-width:0.529"
+         id="rect11"
+         width="12.798634"
+         height="8.3044043"
+         x="-60.871582"
+         y="29.845165" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56802755px;line-height:0.9;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.529"
+         x="-54.545265"
+         y="33.463959"
+         id="text10"><tspan
+           sodipodi:role="line"
+           id="tspan10"
+           style="font-size:3.56802755px;fill:#000000;fill-opacity:1;stroke-width:0.529;-inkscape-font-specification:'Manrope, Normal';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-54.545265"
+           y="33.463959">DC</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.56802755px;fill:#000000;fill-opacity:1;stroke-width:0.529;-inkscape-font-specification:'Manrope, Normal';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-54.545265"
+           y="36.675186"
+           id="tspan11">supply</tspan></text>
+    </g>
+    <g
+       id="g17"
+       transform="matrix(0.98871852,0,0,0.98871852,204.20789,96.692303)">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.4;stroke:none;stroke-width:0.582689"
+         id="rect17"
+         width="22.724617"
+         height="9.0274067"
+         x="-55.502235"
+         y="51.158344" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;line-height:0.9;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.529"
+         x="-35.27718"
+         y="54.853935"
+         id="text16"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.529"
+           x="-35.27718"
+           y="54.853935"
+           id="tspan17">STM32F407</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.529"
+           x="-35.27718"
+           y="58.065159"
+           id="tspan6">target</tspan></text>
+      <rect
+         style="fill:#ffffff;fill-opacity:0.65;stroke:none;stroke-width:0.561364"
+         id="rect8"
+         width="19.90933"
+         height="9.5635319"
+         x="-70.897118"
+         y="68.207115" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;line-height:1;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.669006;stroke-linejoin:round"
+         x="-61.028084"
+         y="72.49575"
+         id="text14"><tspan
+           sodipodi:role="line"
+           id="tspan14"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.669006"
+           x="-61.028084"
+           y="72.49575">SMA power</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.669006"
+           x="-61.028084"
+           y="76.063782"
+           id="tspan16"> board</tspan></text>
+      <rect
+         style="fill:#ffffff;fill-opacity:0.75456053;stroke:none;stroke-width:0.838578"
+         id="rect1"
+         width="44.427753"
+         height="9.5635319"
+         x="-124.19242"
+         y="70.013733" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;line-height:1;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.669006;stroke-linejoin:round"
+         x="-101.93513"
+         y="74.431412"
+         id="text2"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.669006"
+           x="-101.93513"
+           y="74.431412"
+           id="tspan3">mounted exoskeleton </tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56803px;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.669006"
+           x="-101.93513"
+           y="77.999443"
+           id="tspan4">+ mannequin</tspan></text>
+    </g>
+    <g
+       id="g21"
+       transform="matrix(0.98871852,0,0,0.98871852,368.58721,132.34426)">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.7;stroke:none;stroke-width:0.505001"
+         id="rect21"
+         width="18.382669"
+         height="13.000478"
+         x="-224.06529"
+         y="-24.440115" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56802755px;line-height:0.9;font-family:Manrope;-inkscape-font-specification:'Manrope, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.529"
+         x="-222.28542"
+         y="-20.466177"
+         id="text19"><tspan
+           sodipodi:role="line"
+           style="font-size:3.56802755px;fill:#000000;fill-opacity:1;stroke-width:0.529;-inkscape-font-specification:'Manrope, Normal';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-222.28542"
+           y="-20.466177"
+           id="tspan21">SMA</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.56802755px;fill:#000000;fill-opacity:1;stroke-width:0.529;-inkscape-font-specification:'Manrope, Normal';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-222.28542"
+           y="-17.25495"
+           id="tspan18">actuator</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.56802755px;fill:#000000;fill-opacity:1;stroke-width:0.529;-inkscape-font-specification:'Manrope, Normal';font-family:Manrope;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-222.28542"
+           y="-14.043723"
+           id="tspan36">assembly</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker28)"
+       d="m 95.77159,113.15239 11.61912,0.74694"
+       id="path36"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker28)"
+       d="m 131.26814,112.2468 15.37222,2.7564"
+       id="path37"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker24)"
+       d="m 142.29373,142.46116 7.52708,-5.72482"
+       id="path25"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker24)"
+       d="m 156.18173,163.02813 3.81656,-6.04287"
+       id="path26"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker28)"
+       d="m 100.50223,131.24502 4.14968,5.02112"
+       id="path29"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
